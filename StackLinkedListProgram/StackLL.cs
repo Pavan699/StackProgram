@@ -40,6 +40,18 @@ namespace StackLinkedListProgram
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
+            Console.WriteLine();
+        }
+        /// <summary>
+        /// Peek() method to Print(Peek) the Top element
+        /// </summary>
+        public void Peek()
+        {
+            if(this.top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            Console.WriteLine("Top Element is : {0}",this.top.data);
         }
     }
 }
