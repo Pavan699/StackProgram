@@ -14,6 +14,8 @@ namespace StackLinkedListProgram
             stack.Print();
             stack.Peek();
             stack.Print();
+            stack.Pop();
+            stack.Print();
 
         }
     }

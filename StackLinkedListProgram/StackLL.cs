@@ -53,5 +53,17 @@ namespace StackLinkedListProgram
             }
             Console.WriteLine("Top Element is : {0}",this.top.data);
         }
+        /// <summary>
+        /// Pop() method to Delete(Pop) the top element
+        /// </summary>
+        public void Pop()
+        {
+            if (this.top == null) 
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            Console.WriteLine("Popped Element is : {0}", this.top.data);
+            this.top = this.top.next;
+        }
     }
 }
