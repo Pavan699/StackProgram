@@ -12,11 +12,7 @@ namespace StackLinkedListProgram
             stack.Push(30);
             stack.Push(56);
             stack.Print();
-            stack.Peek();
-            stack.Print();
-            stack.Pop();
-            stack.Print();
-
+            stack.Empty();         
         }
     }
 }

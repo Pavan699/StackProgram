@@ -51,7 +51,7 @@ namespace StackLinkedListProgram
             {
                 Console.WriteLine("Stack is Empty");
             }
-            Console.WriteLine("Top Element is : {0}",this.top.data);
+            Console.WriteLine("Top(Peek) Element is : {0}",this.top.data);
         }
         /// <summary>
         /// Pop() method to Delete(Pop) the top element
@@ -64,6 +64,17 @@ namespace StackLinkedListProgram
             }
             Console.WriteLine("Popped Element is : {0}", this.top.data);
             this.top = this.top.next;
+        }
+        /// <summary>
+        /// Empty() method to do stack empty
+        /// </summary>
+        public void Empty()
+        {
+            while(this.top != null)
+            {
+                Peek();
+                Pop();
+            }
         }
     }
 }
