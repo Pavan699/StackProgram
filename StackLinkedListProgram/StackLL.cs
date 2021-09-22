@@ -27,7 +27,7 @@ namespace StackLinkedListProgram
                 node.next = this.top;
             }
             this.top = node;
-            Console.WriteLine("Element {0} is Pushed in Stack", data);
+            //Console.WriteLine("Element {0} is Pushed in Stack", data);
         }
         /// <summary>
         /// Print() method to print the Stack
@@ -35,6 +35,10 @@ namespace StackLinkedListProgram
         public void Print()
         {
             StackNode<Stype> temp = this.top;
+            if(temp == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
             while (temp != null)
             {
                 Console.Write(temp.data + " ");
